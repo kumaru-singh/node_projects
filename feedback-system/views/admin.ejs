@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Admin Feedback View</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <title>Admin - Feedbacks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h2>All Feedback Entries</h2>
-  <table border="1" cellpadding="10">
-    <tr>
-      <th>Teacher</th>
-      <th>Rating</th>
-      <th>Suggestion</th>
-      <th>Date</th>
-    </tr>
-    <% feedbacks.forEach(fb => { %>
-      <tr>
-        <td><%= fb.teacher %></td>
-        <td><%= fb.rating %></td>
-        <td><%= fb.suggestion %></td>
-        <td><%= new Date(fb.date).toLocaleString() %></td>
-      </tr>
-    <% }); %>
-  </table>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">All Feedbacks</h2>
+
+    <% if (feedbacks.length === 0) { %>
+      <div class="alert alert-warning text-center">No feedbacks yet.</div>
+    <% } else { %>
+      <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark">
+          <tr>
+            <th>Teacher</th>
+            <th>Rating</th>
+            <th>Suggestion</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% feedbacks.forEach(fb => { %>
+            <tr>
+              <td><%= fb.teacher %></td>
+              <td><%= fb.rating %></td>
+              <td><%= fb.suggestion %></td>
+              <td><%= new Date(fb.date).toLocaleString() %></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } %>
+
+    <div class="text-center mt-3">
+      <a href="/" class="btn btn-outline-primary">Back to Form</a>
+    </div>
+  </div>
 </body>
 </html>
