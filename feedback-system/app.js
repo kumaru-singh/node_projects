@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import bodyparser from "bodyparser";
+import bodyparser from "body-parser";
 import ejs from "ejs";
 import bodyParser from "body-parser";
 
