@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Feedback View</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h2>All Feedback Entries</h2>
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>Teacher</th>
+      <th>Rating</th>
+      <th>Suggestion</th>
+      <th>Date</th>
+    </tr>
+    <% feedbacks.forEach(fb => { %>
+      <tr>
+        <td><%= fb.teacher %></td>
+        <td><%= fb.rating %></td>
+        <td><%= fb.suggestion %></td>
+        <td><%= new Date(fb.date).toLocaleString() %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>
