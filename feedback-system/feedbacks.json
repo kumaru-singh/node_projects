@@ -4,5 +4,35 @@
     "rating": "1",
     "suggestion": "He is pretty good but not sure how he deals with others.",
     "date": "2025-04-10T13:11:19.425Z"
+  },
+  {
+    "teacher": "Prof. B",
+    "rating": "5",
+    "suggestion": "He is kind and smart with practical approach.",
+    "date": "2025-04-10T13:31:51.095Z"
+  },
+  {
+    "teacher": "Prof. C",
+    "rating": "4",
+    "suggestion": "He is very strict at sudents.",
+    "date": "2025-04-10T13:39:49.451Z"
+  },
+  {
+    "teacher": "Prof. B",
+    "rating": "3",
+    "suggestion": "He is sometimes very strict.",
+    "date": "2025-04-10T13:40:24.958Z"
+  },
+  {
+    "teacher": "Prof. D",
+    "rating": "2",
+    "suggestion": "He is a good man at heart.",
+    "date": "2025-04-10T14:14:45.315Z"
+  },
+  {
+    "teacher": "Prof. E",
+    "rating": "4",
+    "suggestion": "He is great at relating things.",
+    "date": "2025-04-10T14:21:23.630Z"
   }
 ]
